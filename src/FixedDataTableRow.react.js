@@ -225,9 +225,7 @@ var FixedDataTableRow = React.createClass({
     var style = {
       width: this.props.width,
       height: this.props.height,
-      zIndex: (this.props.zIndex ? this.props.zIndex : 0),
     };
-    translateDOMPositionXY(style, 0, this.props.offsetTop);
 
     return (
       <div
