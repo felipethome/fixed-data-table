@@ -78,9 +78,9 @@ var FixedDataTableCellGroupImpl = React.createClass({
       height: props.height,
       position: 'absolute',
       width: contentWidth,
-      zIndex: props.zIndex
+      zIndex: props.zIndex,
+      left: -1 * DIR_SIGN * props.left
     };
-    translateDOMPositionXY(style, -1 * DIR_SIGN * props.left, 0);
 
     return React.createElement(
       'div',
